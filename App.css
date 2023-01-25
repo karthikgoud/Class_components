@@ -1,0 +1,30 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-container > img{
+    width: 200px;
+
+}
+
+.header-container > ul{
+    display: flex;
+}
+
+li{
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.card-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 200px;
+    margin: 1rem;
+    border: 1px solid black;
+}

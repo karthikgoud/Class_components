@@ -1,15 +1,23 @@
 import { Component } from "react";
-import { Outlet, Link } from "react-router-dom";
+import ChildClass from "./ChildClass";
 
 class AboutClass extends Component {
+  constructor(props) {
+    super(props);
+    console.log("Parent-Constructor");
+  }
+
+  componentDidMount() {
+    console.log("Parent-componentDidMount ");
+  }
+
   render() {
+    console.log("Parent-render");
     return (
       <>
         <h1>About</h1>
-        <Link to="profile">
-          <p>View Profile</p>
-        </Link>
-        <Outlet />
+
+        <ChildClass />
       </>
     );
   }

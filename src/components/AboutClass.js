@@ -11,6 +11,14 @@ class AboutClass extends Component {
     console.log("Parent-componentDidMount ");
   }
 
+  componentDidUpdate() {
+    console.log("parent- update");
+  }
+
+  componentWillUnmount() {
+    console.log("parent- unmount");
+  }
+
   render() {
     console.log("Parent-render");
     return (

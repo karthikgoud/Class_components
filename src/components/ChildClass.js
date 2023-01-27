@@ -11,6 +11,14 @@ class ParentClass extends Component {
     console.log("Child-componentDidMount");
   }
 
+  componentDidUpdate() {
+    console.log("Child- update");
+  }
+
+  componentWillUnmount() {
+    console.log("Child- unmount");
+  }
+
   render() {
     console.log("Child-render");
 

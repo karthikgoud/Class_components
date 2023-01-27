@@ -7,6 +7,7 @@ import AboutClass from "./src/components/AboutClass";
 import ContactClass from "./src/components/ContactClass";
 import Product from "./src/components/ProductClass";
 import Footer from "./src/components/Footer";
+import Profile from "./src/components/Profile";
 
 const FoodProject = () => {
   return (
@@ -28,8 +29,14 @@ const AppRoute = createBrowserRouter([
         element: <Body />,
       },
       {
-        path: "/about",
+        path: "/about", // /about or about can be used =>>> root/about >>> / means from root ie localhost:1234
         element: <AboutClass />,
+        children: [
+          {
+            path: "profile", // this means localhost:1234/about/profile >>> if u write /profile it gives localhost/profile
+            element: <Profile />,
+          },
+        ],
       },
       {
         path: "/contact",

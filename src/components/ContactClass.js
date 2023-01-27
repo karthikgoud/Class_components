@@ -2,7 +2,11 @@ import React, { Component } from "react";
 
 class ContactClass extends Component {
   render() {
-    return <div>ContactClass</div>;
+    return (
+      <div>
+        <h1>ContactClass</h1>
+      </div>
+    );
   }
 }
 

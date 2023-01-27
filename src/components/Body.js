@@ -8,9 +8,6 @@ class Body extends Component {
         <Card name="restaurant" location="ballari" />
         <Card name="restaurant" location="ballari" />
         <Card name="cart" location="mysore" />
-        <Card name="restaurant" location="ballari" />
-        <Card name="taxi" location="hubli" />
-        <Card name="restaurant" location="ballari" />
       </div>
     );
   }
